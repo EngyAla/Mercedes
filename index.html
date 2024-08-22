@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="home">
+        <video autoplay loop muted plays-inline class="back_video">
+            <source src="photo/video_2024-08-09_22-28-47.mp4">
+        </video>
+        <div class="container">
+            <div class="header_content">
+                <a href="index.html"><img src="photo/mercedes-benz-logo-8.png" alt="logo" width="50" height="50" class="logo"></a>
+                <nav>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="login.html">login</a></li>
+                        <li><a href="register.html">Sign up</a></li>
+                    </ul>
+
+                    <ul id="user">
+                        <select class="searchContent select_type">
+                            <option>Search by name</option>
+                            <option>Search by price</option>
+                        </select>
+                        <div class="searchContent">
+                            <input type="text" placeholder="Searce..." id="searchBar">
+                            <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+                        </div>
+                        <li><a href="#" id="user_info"></a></li>
+                        <!-- <i class="fa-solid fa-cart-shopping cart_icon" id="cart_icons"></i> -->
+                        <img src="photo/OIP.png" id="cart_icons" width="35px" height="35px">
+                        <span class="num_of_products"><span class="num_of_products_hack">0</span></span>
+                        <li><a href="register.html" id="logOut">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="home_info">
+                <div class="car_info">
+                    <!-- <span class="p_info">0-100 Km</span>
+                    <p class="p_info_p">Sporty</p> -->
+                    <h1 class="car_title">The Geländewagen. Electrified.</h1>
+                    <p class="car_p">The all-new electric G-Class.</p>
+                    <button class="car_discover">Discover more <i class="fa-solid fa-arrow-right btn_icon"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <section class="sec2">
+        <div class="sec2_container">
+            <div class="products">
+                <div class="product_items product_items1">
+                    <p class="product_item_p"></p>
+                    <img src="" alt="" class="product_item_img" width="400px" height="500px">
+                    <div class="product_item_action">
+                        <button class="product_item_btn"><i class="fa-solid fa-arrow-right btn_icon"></i></button>
+                        <i class="fa-regular fa-heart fav"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <div class="cartTap" id="cart_tap">
+        <h2>Shopping Cart</h2>
+        <div class="cartTap_item">
+            <div class="item">
+                <div class="item_name">
+                    <p class="item_p"></p>
+                </div>
+                <div class="item_photo">
+                    <img src="" class="item_img" width="0" height="0">
+                </div>
+                <div class="item_price">
+                    <p class="price"></p>
+                </div>
+                <div class="item_quentity">
+                    <span class="minus"></span>
+                    <span class="amount"></span>
+                    <span class="positive"></span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="cartTap_btn">
+            <button><a href="cartproducts.html" class="cartproducts">your shopping cart<i class="fa-solid fa-arrow-right btn_icon"></i></a></button>
+        </div>
+    </div>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <section class="sec3">
+        <div class="sec3_info">
+            <div class="sec3_title">
+                <p>Inspired by the sense of freedom.</p>
+                <h1>Masterpiece in <br>the desert.</h1>
+            </div>
+            <div class="sec3_img">
+                <img src="photo/IMG-20240807-WA0019.jpg" width="520px" height="320px">
+                <p>Text: Josefine Klatt | Photos: Daniel Dorsa</p>
+            </div>
+        </div>
+
+        <div class="sec3_p">
+            <p>Interior designer John Vugrin has dedicated his career to a house that is making architectural history. A journey through the California desert.</p>
+            <button class="car_discover">Discover more <i class="fa-solid fa-arrow-right btn_icon"></i></button>
+        </div>
+    </section>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+    <section class="sec4">
+        <h1>Follow Mercedes-Benz</h1>
+        <div class="sec4_icon">
+            <a href="https://www.instagram.com/mercedesbenz/"><i class="fa-brands fa-instagram contact-us"></i></a>
+            <a href="https://www.facebook.com/MercedesBenz"><i class="fa-brands fa-facebook contact-us"></i></a>
+            <a href="https://x.com/mercedesbenz?mx=2"><i class="fa-brands fa-x-twitter contact-us"></i></a>
+            <a href="https://www.linkedin.com/company/mercedes-benz_ag"><i class="fa-brands fa-linkedin contact-us"></i></a>
+            <a href="https://www.youtube.com/user/MercedesBenzTV"><i class="fa-brands fa-youtube contact-us"></i></a>
+            <a href="https://www.tiktok.com/@mercedesbenz"><i class="fa-brands fa-tiktok contact-us"></i></a>
+        </div>
+        
+    </section>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
