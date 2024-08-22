@@ -206,8 +206,9 @@ if(addedItem){
     num_of_products_hack.innerHTML = +(counter)
 }
 
-
 function addToCart(id){
+    if(localStorage.getItem("username")){
+
     let choosenItem = products.find((item) => item.id === id);
     let choosenBtn = document.querySelector(`button[data-id='${id}']`)
     if(choosenBtn){
@@ -247,8 +248,14 @@ function addToCart(id){
 
         }
     }
-}
-addToCart()
+}else{
+    setTimeout(() =>{
+        window.location = "register.html"
+    }, 1500)
+    
+}}
+// addToCart()
+
 
 function addToFav(id){
     let choosenFav = products.find((item) => item.id === id)
